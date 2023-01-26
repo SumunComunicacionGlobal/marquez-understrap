@@ -1,0 +1,279 @@
+.ocultar,
+.grecaptcha-badge {
+	display: none !important;
+}
+
+img.logo-alignleft {max-width: 25%;}
+.semitransparente { opacity: 0.1;}
+.imagen-logo-fondo {margin-top: 30px; padding: 20px; box-sizing: border-box;}
+.zoomLink {
+	width:25%;
+	  margin: 0 20px 10px 0;
+}
+
+.zoomLink > img.alignleft {
+	width:100%;
+}
+
+.featured-image {
+	margin-left: 0;
+    margin-right: 35px;
+	width:20%;
+	height:auto;
+	float:left;
+
+}
+
+.entry-content table img {
+	display:inline;
+}
+
+.qtrans_flag, .qtranxs_flag, .qtrans_flag_and_text, .qtranxs_flag_and_text, .qtrans_language_chooser li, .qtranxs_language_chooser li  {
+	float:left;
+	margin-left:6px;
+	background-position:left !important;
+}
+.qtranxs_flag_and_text {
+	padding-left: 20px;
+}
+.qtrans_flag, .qtranxs_flag {
+	height:auto !important;
+	width:auto !important;
+}
+/*
+.qtrans_language_chooser li {
+    float: left;
+}*/
+
+#qts-lang-menu li, #qtranslate-chooser li {
+	float:left;
+	background-position:left !important;
+
+}
+p.qtranxs-available-languages-message {
+    display: none;
+}
+
+.miniatura-de-logo {
+	height:30px !important;
+	width:auto;
+	display:block;
+	float:right;
+}
+
+:lang(es) #menu-item-1104 {display: none !important;} 
+:lang(es) #menu-item-529 {display: none !important;} 
+:lang(es) #menu-item-1546 {display: none !important;} 
+:lang(en) #menu-item-1105 {display: none !important;} 
+:lang(en) #menu-item-529 {display: none !important;} 
+:lang(en) #menu-item-1546 {display: none !important;} 
+:lang(pt) #menu-item-1104 {display: none !important;}
+:lang(pt) #menu-item-1105 {display: none !important;}
+:lang(pt) #menu-item-1546 {display: none !important;}
+:lang(fr) #menu-item-1104 {display: none !important;}
+:lang(fr) #menu-item-1105 {display: none !important;}
+:lang(fr) #menu-item-529 {display: none !important;}
+
+
+:lang(es) .dcjq-accordion .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-1104 {display: none !important;} 
+:lang(es) .dcjq-accordion .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-529 {display: none !important;} 
+:lang(es) .dcjq-accordion .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-1546 {display: none !important;} 
+:lang(en) .dcjq-accordion .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-1105 {display: none !important;} 
+:lang(en) .dcjq-accordion .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-529 {display: none !important;} 
+:lang(en) .dcjq-accordion .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-1546 {display: none !important;} 
+:lang(pt) .dcjq-accordion .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-1104 {display: none !important;} 
+:lang(pt) .dcjq-accordion .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-1105 {display: none !important;} 
+:lang(pt) .dcjq-accordion .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-1546 {display: none !important;} 
+:lang(fr) .dcjq-accordion .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-1104 {display: none !important;} 
+:lang(fr) .dcjq-accordion .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-1105 {display: none !important;} 
+:lang(fr) .dcjq-accordion .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-529 {display: none !important;} 
+
+.sb-options li a[href="#http://maquinariamarquez.com/wp/"], .sb-options li a[href="#http://maquinariamarquez.com/wp/en"], .sb-options li a[href="#http://maquinariamarquez.com/wp/pt"] {
+	display:none
+}
+
+/* MENUS LATINOAMERICA */
+/*
+.menu-latinoamerica-superior-container {
+	max-width: 1140px;
+	box-sizing: border-box;
+	margin: 40px auto 0;
+	float: left;
+}
+#menu-latinoamerica-superior {
+	display: flex;
+	max-width: 1140px;
+	margin: 0 auto;
+	flex-wrap: wrap;
+}
+#menu-latinoamerica-superior .menu-item {
+	display: block;
+	float: left;
+	width: 19.5%;
+	margin-right: 0.5%;
+	box-sizing: border-box;
+	border-radius: 8px;
+}
+#menu-latinoamerica-superior .menu-item:hover a {
+	color: #ffffff;
+	text-decoration: none;
+	opacity: 1;
+}
+#menu-latinoamerica-superior .menu-item a {
+	padding: 14px 14px 14px 30px;
+	text-align: right;
+	display: block;
+	color: #383838;
+	font-size: 18px;
+	line-height: 110%;
+	height: 100%;
+	box-sizing: border-box;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	border-radius: 8px;
+	opacity: 0.84;
+}
+
+#menu-latinoamerica-home-derecha .menu-item {
+    padding: 40px 14px;
+    line-height: 140%;
+    margin-bottom: 10px;
+}
+#menu-latinoamerica-home-derecha .menu-item a {
+    font-size: 18px;
+}
+#menu-latinoamerica-home-derecha .menu-item:hover a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+@include media-breakpoint-down(md) {
+	.menu-latinoamerica-superior-container {
+		display: flex;
+	}
+	#menu-latinoamerica-superior {
+		flex-direction: column;
+	}
+	#menu-latinoamerica-superior .menu-item {
+		width: 100%;
+	}
+	#menu-latinoamerica-superior .menu-item a {
+		padding-top: 8px;
+		padding-bottom: 8px;
+		margin-bottom: 4px;
+	}
+	.sb-holder {
+	    position: absolute;
+	    right: 0px;
+	}
+}
+
+.boton-ocasion a {background-image: url('../images/boton-6.jpg');}
+.boton-centros-mecanizado a {background-image: url('../images/boton-5.jpg');}
+.boton-cnc a {background-image: url('../images/boton-4.jpg');}
+.boton-convencionales a{background-image: url('../images/boton-3.jpg');}
+.boton-tos-varnsdorf a{background-image: url('../images/boton-2.jpg');}
+.boton-inicio a{
+	background-image: url('../images/boton-1.jpg');
+	font-size: 24px;
+}
+*/
+
+/***/
+
+/* COOKIES */
+.cdp-cookies-alerta .cdp-cookies-texto p { max-width: 600px; margin: 10px auto; }
+.cdp-cookies-alerta .cdp-cookies-texto p, .cdp-cookies-alerta .cdp-cookies-texto a { color: #fff !important; font-family: 'Amble', sans-serif; font-size: 16px !important; line-height: 140%;  }
+.cdp-cookies-alerta.cdp-cookies-tema-blanco .cdp-cookies-texto { background-color: #0088cc; }
+/***/
+
+/* OFERTAS */
+.page-template-template_page_ofertas {font-size: $font-size-base * 1.2;}
+.page-template-template_page_ofertas h1 {margin-top: $spacer*3; margin-bottom: $spacer; background-color: $light; padding: $spacer/2 $spacer;}
+.page-template-template_page_ofertas p {margin-bottom: $spacer*2;}
+.aceptar-oferta {padding: $spacer*2 $spacer*4; font-size: $font-size-base * 1.2; margin-bottom: $spacer*2;}
+/***/
+
+/* Botones menu lateral */
+.menu-lateral-botones { 
+	list-style: none;
+	padding-left: 0;
+	margin-top: $spacer*2;
+
+	> li {
+
+		> a {
+			display: block;
+			padding: 10px 0 10px 50px; 
+			background-size: 40px auto; 
+			background-repeat: no-repeat;
+			border-bottom: 1px solid lightgray;
+		    background-position: left;
+		    text-transform: uppercase;
+		    font-size: $font-size-sm;
+		}
+
+		&.active > a {
+			background-color: $light;
+		}
+
+		&.parent > a {
+			font-weight: bold;
+		}
+
+	}
+}
+/***/
+
+/* Sicky sidebar */
+.sticky-sidebar{
+    will-change: min-height;
+}
+.sidebar__inner{
+    transform: translate(0, 0); /* For browsers don't support translate3d. */
+    transform: translate3d(0, 0, 0);
+    will-change: position, transform;
+}
+/***/
+
+/* Grid categorias */
+.grid-categorias {
+    display: grid;
+    grid-template-columns: repeat(2, calc(50% - 20px) );
+    grid-gap: 20px;
+    margin-bottom: 2rem;
+}
+.link-categoria {
+    display: block;
+    padding: $spacer;
+    background-color: #f1f1f1;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all .3s ease;
+	border-radius: $border-radius;
+}
+a.link-categoria:hover {
+    background-color: #4586a6;
+    color: white;
+}
+.link-categoria.categoria-principal {
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #4586a6;
+    color: #fff;
+}
+
+@include media-breakpoint-up(md) {
+    .grid-categorias {
+        grid-template-columns: repeat(3, calc(33% - 20px) );
+    }
+}
+/***/

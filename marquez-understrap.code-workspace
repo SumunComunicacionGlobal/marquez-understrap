@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../plugins/sumun-plugin"
+		}
+	],
+	"settings": {}
+}

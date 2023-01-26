@@ -1,0 +1,61 @@
+<?php
+/**
+ * The template for displaying the footer
+ *
+ * Contains the closing of the #content div and all content after
+ *
+ * @package Understrap
+ */
+
+// Exit if accessed directly.
+defined( 'ABSPATH' ) || exit;
+
+$container = get_theme_mod( 'understrap_container_type' );
+?>
+
+<?php get_template_part( 'sidebar-templates/sidebar', 'footer-landing' ); ?>
+
+<?php if ( !is_page_template( 'template_page_ofertas.php' ) && !is_singular('landing') && !is_404() ) : ?>
+
+	<?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
+
+<?php endif; ?>
+
+<?php if ( !is_page_template( 'template_page_ofertas.php' ) ) : ?>
+
+	<div id="wrapper-footer">
+
+		<div class="<?php echo esc_attr( $container ); ?>">
+
+			<div class="row">
+
+				<div class="col-md-12">
+
+					<footer class="site-footer" id="colophon">
+
+						<div class="site-info">
+
+							<?php understrap_site_info(); ?>
+
+						</div><!-- .site-info -->
+
+					</footer><!-- #colophon -->
+
+				</div><!--col end -->
+
+			</div><!-- row end -->
+
+		</div><!-- container end -->
+
+	</div><!-- wrapper end -->
+
+<?php endif; ?>
+
+</div><!-- #page we need this extra closing tag here -->
+
+<?php wp_footer(); ?>
+
+</body>
+
+</html>
+

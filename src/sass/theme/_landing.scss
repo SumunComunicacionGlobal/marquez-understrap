@@ -1,0 +1,131 @@
+body.single-landing {
+    font-size: 1.2rem;
+
+    img.logo-fabricante-landing {
+        max-height: 90px;
+        width: auto;
+    }
+    #page {
+        background-image: url('../images/fondo-cabecera-landing.jpg');
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+    .wpcf7-form {
+
+        br {
+            display: none;
+        }
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: $font-weight-bold;
+    }
+    .entry-header .entry-title {
+        border-bottom: none;
+        text-transform: none;
+        font-size: 2.5rem;
+        margin-bottom: 0;
+    }
+    .entry-header .entry-title:after,
+    #wrapper-destacados-landing .widget-title:before {
+        content: "";
+        display: block;
+        position: relative;
+        height: 12px;
+        width: 150px;
+        margin: 1rem 0;
+        background-color: $indigo;
+    }
+    #wrapper-destacados-landing {
+        padding-top: 200px !important;
+        margin-top: -150px;
+        background-color: $light;
+    }
+    .widget-title {
+        font-size: 1.6rem;
+    }
+    #wrapper-destacados-landing .widget-title:before {
+        margin-bottom: 1rem;
+    }
+    .content-area li {
+        font-weight: bold;
+        list-style-image: url('../images/vineta.svg');
+        // margin-left: 2rem;
+    }
+    #main {
+        position: relative;
+        z-index: 1;
+    }
+    img.foto-principal-landing {
+    /*    width: 100%;
+        height: 500px;
+        object-fit: cover;
+    */
+        /*max-width: 768px;*/
+        clip-path: polygon(0% 15%, 100% 0, 100% 85%, 0% 100% );
+        /*margin-top: -100px;*/
+    }
+
+    .wrapper-form {
+        background-color: $indigo;
+        border-top: 12px solid #191D3F;
+        color: white;
+    }
+    input[type="text"], input[type="email"] {
+        width: 100%;
+        font-size: 1rem;
+        margin-bottom: 4px;
+    }
+    input[type="submit"] {
+        width: 100%;
+        font-weight: bold;
+        text-transform: uppercase;
+        background-image: none;
+        border: 0;
+        background-color: $light;
+    }
+    input:disabled {
+        opacity: .25;
+    }
+    .wpcf7-form p {
+        margin-bottom: 10px !important;
+    }
+    form .row {
+        margin-bottom: 0;
+        margin-left: -2px;
+        margin-right: -2px;
+    }
+    form div[class^="col-"], form div.col {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    #wrapper-footer {
+        background-color: $indigo;
+        color: $white;
+
+        a {
+            color: $white;
+        }
+    }
+
+    .ir-arriba {
+        display: none;
+    }
+
+    @media all and (min-width: 1300px) {
+        .container {
+            max-width: 1280px;
+        }
+    }
+
+    @media all and (min-width: 768px) {
+
+        .foto-principal-landing-wrapper {
+            margin-top: -350px;
+            z-index: -1;
+        }
+    }
+
+    /***/
+
+}
