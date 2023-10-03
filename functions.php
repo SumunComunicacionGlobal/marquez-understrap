@@ -448,30 +448,38 @@ function maquinas_relacionadas_wp($post_id) {
 
     $r = '';
 
-    $terms = get_the_terms( $post_id, 'cat-maquina', array('fields' => 'ids') );
+    $related_ids = get_post_meta( $post_id, 'related_ids', true );
+    $terms = false;
 
-    if ( $terms ) {
+    $args = array(
+        'post_type'         => 'maq-ocasion',
+        'posts_per_page'    => -1,
+        'post__not_in'      => array($post_id),
+    );
 
-        $term_ids = array();
+    if ( $related_ids ) {
+        
+        $args['post__in'] = $related_ids;
+    
+    } else {
 
-        foreach ($terms as $term) {
-            $term_ids[] = $term->term_id;
+        $term_ids = wp_get_post_terms( $post_id, 'cat-maquina', array('fields' => 'ids') );
+
+        if ( $term_ids ) {
+
+            $args['tax_query'][] = array(
+                'taxonomy'      => 'cat-maquina',
+                'field'         => 'term_id',
+                'terms'         => $term_ids,
+            );
+
         }
 
+    }
 
-        $args = array(
-                        'post_type'         => 'maq-ocasion',
-                        'posts_per_page'    => -1,
-                        'post__not_in'      => array($post_id),
-                        'tax_query'         => array(array(
-                                                    'taxonomy'      => 'cat-maquina',
-                                                    'field'         => 'term_id',
-                                                    'terms'         => $term_ids,
-                                                )),
-        );
+    if ( $related_ids || $term_ids ) {
 
         $q = new WP_Query( $args );
-
 
         if ( $q->have_posts() ) {
 
