@@ -21,7 +21,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<div class="row">
 
-			<?php if ( es_latinoamerica() ) :
+			<?php if ( function_exists( 'es_latinoamerica' ) && es_latinoamerica() ) :
 
 				if ( es_chile() && is_active_sidebar( 'footerfull-chile' ) ) :
 

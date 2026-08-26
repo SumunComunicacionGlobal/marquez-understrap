@@ -35,7 +35,7 @@ if( es_blog() ) {
 
 } else {
 	
-	if ( es_ocasion() || is_search() /*|| es_latinoamerica()*/ ) {
+	if ( es_ocasion() || is_search() ) {
 
 		menu_categorias_ocasion();
 

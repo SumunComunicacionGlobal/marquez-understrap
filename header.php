@@ -86,7 +86,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					<?php
 
-					if ( es_latinoamerica() ) {
+					if ( function_exists( 'es_latinoamerica' ) && es_latinoamerica() ) {
 
 						menu_latinoamerica();
 
@@ -132,7 +132,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		</div><!-- #wrapper-navbar end -->
 
-		<?php if ( es_latinoamerica() ) {
+		<?php if ( function_exists( 'es_latinoamerica' ) && es_latinoamerica() ) {
 
 			if ( is_active_sidebar( 'cabecera-latinoamerica' ) ) {
 
