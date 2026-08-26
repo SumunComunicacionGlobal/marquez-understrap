@@ -47,6 +47,7 @@
 		justify-content: center;
 		align-items: center;
 		flex-wrap: wrap;
+		gap: $spacer * .5;
 
 		@include media-breakpoint-up(md) {
 			justify-content: flex-end;
@@ -427,39 +428,39 @@ iframe {
 /***/
 
 /* MENUS LATINOAMERICA */
-#menu-latinoamerica-superior {
-	display: flex;
-	flex-direction: column;
-	gap: $spacer * .5;
+// #menu-latinoamerica-superior {
+// 	display: flex;
+// 	flex-direction: column;
+// 	gap: $spacer * .5;
 
-	@include media-breakpoint-up(md) {
-		flex-direction: row;
-	}
+// 	@include media-breakpoint-up(md) {
+// 		flex-direction: row;
+// 	}
 
-	.menu-item {
+// 	.menu-item {
 
-		a {
-			padding: $spacer $spacer $spacer $spacer*2;
-			text-align: right;
-			color: $dark;
-			font-size: $font-size-base * 1.1;
-			line-height: $headings-line-height;
-			height: 100%;
-			  background-size: cover;
-			background-repeat: no-repeat;
-			background-position: left bottom;
-			border-radius: $spacer * .25;
-			opacity: 0.84;		
-		}
+// 		a {
+// 			padding: $spacer $spacer $spacer $spacer*2;
+// 			text-align: right;
+// 			color: $dark;
+// 			font-size: $font-size-base * 1.1;
+// 			line-height: $headings-line-height;
+// 			height: 100%;
+// 			  background-size: cover;
+// 			background-repeat: no-repeat;
+// 			background-position: left bottom;
+// 			border-radius: $spacer * .25;
+// 			opacity: 0.84;		
+// 		}
 
-		&:hover a {
-			color: #ffffff;
-			opacity: 1;		
-		}
+// 		&:hover a {
+// 			color: #ffffff;
+// 			opacity: 1;		
+// 		}
 
-	}
+// 	}
 
-}
+// }
 
 .boton-ocasion a {background-image: url('../images/boton-6.jpg');}
 .boton-centros-mecanizado a {background-image: url('../images/boton-5.jpg');}
@@ -971,6 +972,12 @@ form br {
 .wpml-ls-current-language {
 	font-weight: $font-weight-bold;
 }
+.wpml-ls-legacy-dropdown a {
+	padding: 10px 
+}
+#top-bar .wpml-ls-legacy-dropdown .wpml-ls-sub-menu a {	
+	text-align: left;
+}
 .wpml-ls-legacy-list-horizontal {
 	// padding: 7px 0 !important;
 
@@ -993,4 +1000,14 @@ form br {
 	}
 }
 
+
 /***/
+
+.enlaces-maq-nueva .btn { 
+	margin-right: 1rem;
+	margin-bottom: 1rem;
+}
+
+.tos-wrapper.tos-has-thumbnails.tos-has-caption .tos-uibg {
+    pointer-events: none;
+}

@@ -21,15 +21,31 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<div class="row">
 
-			<?php if ( es_latinoamerica() && is_active_sidebar( 'footerfull-latinoamerica' ) ) :
+			<?php if ( es_latinoamerica() ) :
+
+				if ( es_chile() && is_active_sidebar( 'footerfull-chile' ) ) :
+
+					dynamic_sidebar( 'footerfull-chile' );
+
+				elseif ( is_active_sidebar( 'footerfull-latinoamerica' ) ) :
 
 					dynamic_sidebar( 'footerfull-latinoamerica' );
 
-				else :
+				else :	
 
 					dynamic_sidebar( 'footerfull' );
 
-				endif; ?>
+				endif;
+
+			else :
+
+				if ( is_active_sidebar( 'footerfull' ) ) :
+
+					dynamic_sidebar( 'footerfull' );
+
+				endif;
+
+			endif; ?>
 
 		</div>
 

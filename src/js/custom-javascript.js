@@ -18,7 +18,8 @@ jQuery(document).ready(function($){
     // });
 
     $('.slider-home').slick({
-      dots: true
+      dots: true,
+      autoplay: true,
     });
 
     // $('.menu-lateral-botones-carrusel').slick({

@@ -15452,6 +15452,7 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  gap: 0.5rem;
 }
 @media (min-width: 783px) {
   #top-bar .top-bar-right {
@@ -15755,34 +15756,6 @@ iframe {
 
 /***/
 /* MENUS LATINOAMERICA */
-#menu-latinoamerica-superior {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-@media (min-width: 783px) {
-  #menu-latinoamerica-superior {
-    flex-direction: row;
-  }
-}
-#menu-latinoamerica-superior .menu-item a {
-  padding: 1rem 1rem 1rem 2rem;
-  text-align: right;
-  color: #343a40;
-  font-size: 1.155rem;
-  line-height: 1.2;
-  height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: left bottom;
-  border-radius: 0.25rem;
-  opacity: 0.84;
-}
-#menu-latinoamerica-superior .menu-item:hover a {
-  color: #ffffff;
-  opacity: 1;
-}
-
 .boton-ocasion a {
   background-image: url("../images/boton-6.jpg");
 }
@@ -16208,6 +16181,14 @@ form br {
   font-weight: 600;
 }
 
+.wpml-ls-legacy-dropdown a {
+  padding: 10px;
+}
+
+#top-bar .wpml-ls-legacy-dropdown .wpml-ls-sub-menu a {
+  text-align: left;
+}
+
 .wpml-ls-legacy-list-horizontal ul {
   list-style-type: none;
 }
@@ -16224,6 +16205,15 @@ form br {
 }
 
 /***/
+.enlaces-maq-nueva .btn, .enlaces-maq-nueva .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message .enlaces-maq-nueva a.button, .enlaces-maq-nueva .woocommerce-info a.button, .woocommerce-info .enlaces-maq-nueva a.button, .enlaces-maq-nueva .wpcf7 input[type=submit], .wpcf7 .enlaces-maq-nueva input[type=submit] {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tos-wrapper.tos-has-thumbnails.tos-has-caption .tos-uibg {
+  pointer-events: none;
+}
+
 body.single-landing {
   font-size: 1.2rem;
   /***/
