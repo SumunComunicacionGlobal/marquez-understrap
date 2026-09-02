@@ -15842,6 +15842,9 @@ iframe {
 #slider-mask-right .slider-cell a {
   color: #fff;
 }
+#slider-mask-right .slider-cell.ocasion:last-child {
+  margin-top: 4rem;
+}
 
 /***/
 /* Máquinas */
